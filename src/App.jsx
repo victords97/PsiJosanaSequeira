@@ -146,10 +146,6 @@ function LandingPage() {
                     <i className="bi bi-calendar-check me-2" aria-hidden="true" />
                     Agendar consulta
                   </a>
-                  <a className="btn btn-outline-primary btn-lg" href={whatsappUrl} target="_blank" rel="noreferrer">
-                    <i className="bi bi-whatsapp me-2" aria-hidden="true" />
-                    Falar no WhatsApp
-                  </a>
                 </div>
               </div>
               <div className="col-lg-5 col-xl-6" data-reveal="right">
