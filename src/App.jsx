@@ -51,7 +51,7 @@ const contactItems = [
   {
     icon: 'bi-whatsapp',
     label: 'WhatsApp',
-    value: '(92) 99119-1665',
+    value: '92 99119-1665',
     href: whatsappUrl,
   },
   {
