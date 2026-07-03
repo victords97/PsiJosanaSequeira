@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.git/
+.repo-git/
+.agents/
+.codex/
+
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+.env
+.env.*
