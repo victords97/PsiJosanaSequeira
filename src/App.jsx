@@ -43,7 +43,7 @@ const audiences = ['Crianças', 'Adolescentes', 'Adultos', 'Casais'];
 
 const credentials = [
   '18 anos de formação e experiência em Psicologia Clínica e Organizacional.',
-  'ÃŠnfase em Terapia Cognitivo-Comportamental e Neuropsicologia.',
+  'Ênfase em Terapia Cognitivo-Comportamental e Neuropsicologia.',
   'Atendimento presencial em Manaus e atendimento psicológico online.',
 ];
 
@@ -175,7 +175,7 @@ function LandingPage() {
                 <p className="section-text">
                   Sou Josana Sequeira, psicóloga formada há 18 anos, com atuação na Psicologia
                   Clínica e Organizacional. Auxilio pessoas a desenvolverem recursos emocionais,
-                  ampliarem qualidade de vida e cuidarem da saúde mental com responsabilidade.
+                  ampliarem qualidade de vida e cuidar da saúde mental com responsabilidade.
                 </p>
                 <div className="credential-list">
                   {credentials.map((item) => (
