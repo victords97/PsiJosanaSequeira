@@ -2,7 +2,7 @@
 import logo from '../assets/logo.png';
 import profilePhoto from '../assets/perfil.jpeg';
 
-const clinicPhone = '55929911191665';
+const clinicPhone = '5592991191665';
 const whatsappMessage = encodeURIComponent(
   'Olá, gostaria de agendar uma consulta com a psicóloga Josana Sequeira.',
 );
@@ -51,7 +51,7 @@ const contactItems = [
   {
     icon: 'bi-whatsapp',
     label: 'WhatsApp',
-    value: '92 99119-1665',
+    value: '+55 92 99119-1665',
     href: whatsappUrl,
   },
   {
