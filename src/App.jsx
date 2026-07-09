@@ -7,6 +7,7 @@ const whatsappMessage = encodeURIComponent(
   'Olá, gostaria de agendar uma consulta com a psicóloga Josana Sequeira.',
 );
 const whatsappUrl = `https://wa.me/${clinicPhone}?text=${whatsappMessage}`;
+const addressMapsUrl = 'https://www.google.com/maps/search/?api=1&query=Rua%20Leonardo%20Malcher%2C%201948%2C%20Centro%2C%20Manaus%2C%20AM%2C%2069020-070';
 
 const focusKeyword = 'Psicóloga em Manaus';
 const professionalName = 'Josana de Lima Sequeira';
@@ -67,7 +68,7 @@ const contactItems = [
     icon: 'bi-geo-alt',
     label: 'Endereço',
     value: 'Rua Leonardo Malcher, 1948, Centro, Manaus',
-    href: '#contato',
+    href: addressMapsUrl,
   },
 ];
 
@@ -271,7 +272,13 @@ function LandingPage() {
               <div className="col-lg-6" data-reveal="right">
                 <div className="contact-list">
                   {contactItems.map((item) => (
-                    <a className="contact-item" href={item.href} key={item.label}>
+                    <a
+                      className="contact-item"
+                      href={item.href}
+                      target={item.label === 'Endereço' ? '_blank' : undefined}
+                      rel={item.label === 'Endereço' ? 'noreferrer' : undefined}
+                      key={item.label}
+                    >
                       <i className={`bi ${item.icon}`} aria-hidden="true" />
                       <span>
                         <strong>{item.label}</strong>
