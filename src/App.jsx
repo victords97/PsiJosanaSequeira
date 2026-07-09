@@ -8,7 +8,9 @@ const whatsappMessage = encodeURIComponent(
 );
 const whatsappUrl = `https://wa.me/${clinicPhone}?text=${whatsappMessage}`;
 
-const focusKeyword = 'psicóloga em Manaus';
+const focusKeyword = 'Psicóloga em Manaus';
+const professionalName = 'Josana de Lima Sequeira';
+const professionalRegistration = 'CRP 20/02918';
 
 const services = [
   {
@@ -42,6 +44,7 @@ const clinicalTopics = [
 const audiences = ['Crianças', 'Adolescentes', 'Adultos', 'Casais'];
 
 const credentials = [
+  `${professionalName}, ${professionalRegistration}.`,
   '18 anos de formação e experiência em Psicologia Clínica e Organizacional.',
   'Ênfase em Terapia Cognitivo-Comportamental e Neuropsicologia.',
   'Atendimento presencial em Manaus e atendimento psicológico online.',
@@ -65,6 +68,17 @@ const contactItems = [
     label: 'Endereço',
     value: 'Rua Leonardo Malcher, 1948, Centro, Manaus',
     href: '#contato',
+  },
+];
+
+const socialLinks = [
+  {
+    label: 'Josana Sequeira',
+    href: 'https://www.instagram.com/josanasequeira?igsh=MTQ0YTlmdG90M2xiaA==',
+  },
+  {
+    label: 'Clínica Iluminamente',
+    href: 'https://www.instagram.com/clinica.iluminamente?igsh=MWFnanh4OHVzaWkyNg==',
   },
 ];
 
@@ -130,6 +144,7 @@ function LandingPage() {
               <div className="col-lg-7 col-xl-6" data-reveal="left">
                 <p className="section-kicker">Psicóloga em Manaus</p>
                 <h1>Josana Sequeira</h1>
+                <p className="professional-id">{professionalName}, {professionalRegistration}</p>
                 <p className="hero-copy">
                   Atendimento psicológico presencial e online para ansiedade, depressão,
                   relacionamentos, luto e desenvolvimento emocional, com base em Terapia
@@ -173,7 +188,7 @@ function LandingPage() {
               </div>
               <div className="col-lg-7" data-reveal="right">
                 <p className="section-text">
-                  Sou Josana Sequeira, psicóloga formada há 18 anos, com atuação na Psicologia
+                  Sou {professionalName}, psicóloga formada há 18 anos, com atuação na Psicologia
                   Clínica e Organizacional. Auxilio pessoas a desenvolverem recursos emocionais,
                   ampliarem qualidade de vida e cuidar da saúde mental com responsabilidade.
                 </p>
@@ -264,6 +279,17 @@ function LandingPage() {
                       </span>
                     </a>
                   ))}
+                  <div className="social-follow" aria-label="Redes sociais">
+                    <strong>Nos siga nas redes</strong>
+                    <div className="social-links">
+                      {socialLinks.map((link) => (
+                        <a href={link.href} target="_blank" rel="noreferrer" key={link.label}>
+                          <i className="bi bi-instagram" aria-hidden="true" />
+                          <span>{link.label}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -273,7 +299,7 @@ function LandingPage() {
 
       <footer className="site-footer">
         <div className="container d-flex flex-column flex-md-row justify-content-between gap-2">
-          <span>Josana Sequeira Psicóloga</span>
+          <span>{professionalName} - {professionalRegistration}</span>
           <span>{focusKeyword} com atendimento presencial e online.</span>
         </div>
       </footer>
@@ -321,5 +347,3 @@ function App() {
 }
 
 export default App;
-
-
