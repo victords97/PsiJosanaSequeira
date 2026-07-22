@@ -78,8 +78,8 @@ const socialLinks = [
     href: 'https://www.instagram.com/josanasequeira?igsh=MTQ0YTlmdG90M2xiaA==',
   },
   {
-    label: 'Clínica Iluminamente',
-    href: 'https://www.instagram.com/clinica.iluminamente?igsh=MWFnanh4OHVzaWkyNg==',
+    label: 'Clínica Illuminatmente',
+    href: 'https://www.instagram.com/clinica.illuminatmente?igsh=MWFnanh4OHVzaWkyNg==',
   },
 ];
 
